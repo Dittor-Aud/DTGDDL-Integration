@@ -41,8 +41,8 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
-          bindings: RayDeeUx/bindings
-          bindings-ref: "holy-fuck-viper-stop-working-on-this-dogshit-mod"
+          bindings: geode-sdk/bindings
+          bindings-ref: main
           combine: true
           target: ${{ matrix.config.target }}
           android-ndk-version: ${{ matrix.config.android-ndk-version }}
