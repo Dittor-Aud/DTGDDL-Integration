@@ -42,11 +42,11 @@ inline void makeGeodeWebRequest(bool retry, std::string url, std::function<void(
 
 inline static void getBRListJSON(std::function<void(matjson::Value)> fun, std::function<void()> failed) {
    //log::debug("should send https://br-list.pages.dev/data/_list.json");
-    makeGeodeWebRequest(false, "https://br-list.pages.dev/data/_list.json", fun, failed);
+    makeGeodeWebRequest(false, "https://dtgddl.pages.dev/data/dl/_list.json", fun, failed);
 }
 
 inline static void getBRPackJSON(std::function<void(matjson::Value)> fun, std::function<void()> failed) {
-    makeGeodeWebRequest(false, "https://br-list.pages.dev/data/_packlist.json", fun, failed);
+    makeGeodeWebRequest(false, "https://dtgddl.pages.dev/data/dl/_packlist.json", fun, failed);
 }
 
 inline static void getBRLevelJSON(const std::string& name, std::function<void(matjson::Value)> fun) {
@@ -59,5 +59,5 @@ inline static void getBRLevelJSON(const std::string& name, std::function<void(ma
         }
     }
     //log::debug("getting info for {}",name);
-    makeGeodeWebRequest(true, fmt::format("https://br-list.pages.dev/data/{}.json", finalURL), fun, nullptr);
+    makeGeodeWebRequest(true, fmt::format("https://dtgddl.pages.dev/data/dl/{}.json", finalURL), fun, nullptr);
 }
