@@ -1,20 +1,20 @@
 {
-	"geode": "4.6.2",
+	"geode": "4.9.0",
 	"gd": {
 		"win": "2.2074",
 		"mac": "2.2074",
 		"ios": "2.2074",
 		"android": "2.2074"
 	},
-	"id": "viper.br_list",
-	"name": "Integrated BRL",
+	"id": "dt.dtggdl_integration",
+	"name": "DTGDDL Integration",
 	"links": {
 		"source": "https://github.com/MuhXd/Brainrot-List-Ingame"
 	},
 	"tags" : ["online","joke"],
 	"version": "v1.2.3",
 	"developer": "Cosmella",
-	"description": "View the BRL in-game.",
+	"description": "View DTGDDL in-game.",
 	"settings": {
 		"dark-mode": {
 			"type": "bool",
